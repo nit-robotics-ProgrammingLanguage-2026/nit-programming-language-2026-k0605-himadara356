@@ -12,7 +12,7 @@ if  (num>=0)
         
     if(loop%2==1)
         {
-             ;
+              ;
         }
     else
         { 
