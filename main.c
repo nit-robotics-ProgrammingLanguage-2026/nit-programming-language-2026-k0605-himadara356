@@ -2,29 +2,31 @@
 
 int main(void)
 {
-    int n;
-    long total = 0;
-    int i = 1;
-    scanf("%d", &n);
-    if (n < 0)
+    long num,goukei;
+    long loop;
+    goukei = 0;
+    scanf("%ld", &num);
+if  (num>=0)
     {
-        printf("NG");
-        return 0;
+    for (loop=1;loop<=num;loop++)
+        
+    if(loop%2==1)
+        {
+             ;
+        }
+    else
+        { 
+      goukei = goukei + loop;//
+        }
+    
     }
-    while (1)
+else
     {
-        if (i > n)
-        {
-            break;
-        }
-        if (i % 2 != 0)
-        {
-            i++;
-            continue;
-        }
-        total += i;
-        i++;
+     printf("NG");   
+    };
+if (num>=0)
+    {
+  printf("%ld", goukei);
     }
-    printf("%ld", total);
     return 0;
-}
+};
